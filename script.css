@@ -1,0 +1,87 @@
+/*
+***************************************************
+********** GLOBAL ELENET STYLES ******************
+**************************************************
+*/
+html,
+body {
+  height: 100%;
+}
+
+p {
+  margin: 0px !important;
+}
+
+.h-75px {
+  height: 75px;
+}
+
+.text-white{
+  color: #fff;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/*
+***************************************************
+********** LEFT MENU PANEL STYLES ****************
+**************************************************
+*/
+
+.nav {
+  background-color: rgb(68, 68, 68);
+}
+
+.nav-item{
+  height: 50px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.nav-item-active{
+  background-color: rgb(126, 126, 126);;
+}
+
+/*
+***************************************************
+********** RIGHT CONTENT STYLES ******************
+**************************************************
+*/
+
+/* ====== header styles ============ */
+.header {
+  /* height: 100px; */
+}
+
+.profile-pic {
+  height: 50px;
+  width: 50px;
+}
+
+.logo {
+  background-color: rgb(177, 27, 27);
+  color: #fff;
+  border-bottom: 2px #fff solid;
+}
+
+/* ====== selected-content styles ============ */
+
+.in-app-router-outlet{
+  height: calc(100% - 75px) !important;
+  background-color: rgb(228, 228, 228);
+}
+
+.home{
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.center-card{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
