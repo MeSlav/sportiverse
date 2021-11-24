@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness tracker</title>
-    <link rel="stylesheet" href="script.css" />
+    <link rel="stylesheet" href="app.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,19 +16,25 @@
   <body>
     <div class="container-fluid row p-0 m-0 h-100">
       <!-- LEFT NAV CONTENT -->
-      <nav class="nav col-2 d-flex flex-column p-0 text-white">
-        <div class="logo d-flex justify-content-center align-items-center w-100 h-75px m-0 cursor-pointer"><p>Logo</p></div>
-        <div class="nav-item nav-item-active d-flex justify-content-around align-items-center cursor-pointer">Home</div>
-        <div class="nav-item d-flex justify-content-around align-items-center cursor-pointer">Training</div>
-        <div class="nav-item d-flex justify-content-around align-items-center cursor-pointer">Nutrition</div>
-        <div class="nav-item d-flex justify-content-around align-items-center cursor-pointer">Contact</div>
-        <div class="nav-item d-flex justify-content-around align-items-center cursor-pointer">Help</div>
+      <nav class="nav h-100 col-2 d-none d-lg-flex flex-column p-0 text-white" id="navigation">
+        <div id="logo" class="logo d-flex justify-content-center align-items-center w-100 h-75px m-0 cursor-pointer"><span>&#9776;</span> <span class="px-2">Logo</span></div>
+        <div id="home" class="nav-item nav-item-active d-flex justify-content-around align-items-center cursor-pointer">Home</div>
+        <div id="training" class="nav-item d-flex justify-content-around align-items-center cursor-pointer">Training</div>
+        <div id="nutrition" class="nav-item d-flex justify-content-around align-items-center cursor-pointer">Nutrition</div>
+        <div id="contact" class="nav-item d-flex justify-content-around align-items-center cursor-pointer">Contact</div>
+        <div id="help" class="nav-item d-flex justify-content-around align-items-center cursor-pointer">Help</div>
       </nav>
+
       <!-- RIGHT SIDE CONTENT -->
-      <div class="content col-10 p-0">
+      <div class="content col-12 col-lg-10 p-0" id="content">
         <!-- header -->
         <div class="header d-flex justify-content-between align-items-center p-0 px-3 m-0 w-100 h-75px">
-          <div class="m-0">Ime Prezime</div>
+          <div class="m-0">
+            <button class="btn btn-info d-lg-none" onclick="onToggleMenu()">
+              <i class="fas fa-align-left" style="font-style: normal;">&#9776;</i>
+            </button> 
+            <span>Ime Prezime</span>
+          </div>
           <div class="profile-pic">
             <img
               src="pics/Account.png"
@@ -37,34 +43,35 @@
             />
           </div>
         </div>
+
         <!-- content -->
-        <div class="in-app-router-outlet w-100">
+        <div class="w-100" id="in-app-router-outlet">
           <!-- HOME -->
-          <div class="home">
+          <div class="router-content" id="home-content">
             <div class="center-card">
               <p>HOME</p>
             </div>
           </div>
           <!-- TRAINING -->
-          <div class="home d-none">
+          <div class="router-content d-none" id="training-content">
             <div class="center-card">
               <p>TRAINING</p>
             </div>
           </div>
           <!-- NUTRITION -->
-          <div class="home d-none">
+          <div class="router-content d-none" id="nutrition-content">
             <div class="center-card">
               <p>NUTRITION</p>
             </div>
           </div>
           <!-- CONTACT -->
-          <div class="home d-none">
+          <div class="router-content d-none" id="contact-content">
             <div class="center-card">
               <p>CONTACT</p>
             </div>
           </div>
           <!-- HELP -->
-          <div class="home d-none">
+          <div class="router-content d-none" id="help-content">
             <div class="center-card">
               <p>HELP</p>
             </div>
@@ -73,6 +80,10 @@
       </div>
     </div>
 
+    <div class="d-none" id="nav-menu-backdrop"></div>
+
+
+    <!-- ***************** SCRIPTS ***************** -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -88,6 +99,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/training.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

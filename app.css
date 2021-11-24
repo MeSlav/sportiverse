@@ -12,6 +12,12 @@ p {
   margin: 0px !important;
 }
 
+a{
+  text-decoration: none !important;
+  
+  color: #fff !important; 
+}
+
 .h-75px {
   height: 75px;
 }
@@ -24,6 +30,10 @@ p {
   cursor: pointer;
 }
 
+.v-hidden{
+  visibility: hidden;
+}
+
 /*
 ***************************************************
 ********** LEFT MENU PANEL STYLES ****************
@@ -32,6 +42,9 @@ p {
 
 .nav {
   background-color: rgb(68, 68, 68);
+  z-index: 850;
+  position: absolute;
+  transition: width 2.5s linear;
 }
 
 .nav-item{
@@ -39,8 +52,19 @@ p {
   border-bottom: 1px solid rgb(194, 194, 194);
 }
 
-.nav-item-active{
-  background-color: rgb(126, 126, 126);;
+.nav-item-active,
+.nav-item:hover{
+  background-color: rgb(126, 126, 126);
+}
+
+#nav-menu-backdrop{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
 }
 
 /*
@@ -67,13 +91,13 @@ p {
 
 /* ====== selected-content styles ============ */
 
-.in-app-router-outlet{
+#in-app-router-outlet{
   height: calc(100% - 75px) !important;
   background-color: rgb(228, 228, 228);
 }
 
-.home{
-  padding: 15px;
+.router-content{
+  padding: 25px;
   height: 100%;
   width: 100%;
 }
@@ -85,3 +109,9 @@ p {
   background-color: #fff;
 }
 
+
+@media only screen and (min-width: 922px) {
+  .v-lg-visable{
+    visibility: visible !important;
+  }
+}
