@@ -30,8 +30,29 @@ a{
   cursor: pointer;
 }
 
-.v-hidden{
-  visibility: hidden;
+.bg-black{
+  background-color: black;
+}
+
+/*
+***************************************************
+**************** LOGIN PART **********************
+**************************************************
+*/
+
+/*
+LEFT BACKGROUND PART ========================
+*/
+
+.login-background{
+  background-image: url("./pics/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.background-overlay{
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*

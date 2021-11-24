@@ -14,6 +14,30 @@
     />
   </head>
   <body>
+    <!-- LOGIN PART -->
+    <div class="container-fluid row p-0 m-0 h-100 bg-black d-none">
+      <div class="col-7 p-0">
+        <div class="background-overlay h-100 w-100 position-absolute"></div>
+        <div class="login-background h-100 w-100"></div>
+      </div>
+      <div class="col-5 p-0 d-flex align-items-center justify-content-center">
+        <div class="login-form">
+          <form>
+            <div class="form-group">
+              <label for="inputUsername">Username</label>
+              <input type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+          </form>
+          <button class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- APPLICATION -->
     <div class="container-fluid row p-0 m-0 h-100">
       <!-- LEFT NAV CONTENT -->
       <nav class="nav h-100 col-2 d-none d-lg-flex flex-column p-0 text-white" id="navigation">
