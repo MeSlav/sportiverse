@@ -91,6 +91,15 @@ LEFT BACKGROUND PART ========================
   z-index: 800;
 }
 
+#user-menu-backdrop {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+}
 /*
 ***************************************************
 ********** RIGHT CONTENT STYLES ******************
@@ -120,8 +129,9 @@ LEFT BACKGROUND PART ========================
   border: 1px solid rgb(177, 27, 27);
   box-shadow: 1px 1px 5px rgb(177, 27, 27);
   position: absolute;
-  top: 102px;
+  top: 77px;
   right: 28px;
+  z-index: 950;
 }
 
 .user-menu-option {
