@@ -12,25 +12,25 @@ p {
   margin: 0px !important;
 }
 
-a{
+a {
   text-decoration: none !important;
-  
-  color: #fff !important; 
+
+  color: #fff !important;
 }
 
 .h-75px {
   height: 75px;
 }
 
-.text-white{
+.text-white {
   color: #fff;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 
-.v-hidden{
+.v-hidden {
   visibility: hidden;
 }
 
@@ -47,17 +47,17 @@ a{
   transition: width 2.5s linear;
 }
 
-.nav-item{
+.nav-item {
   height: 50px;
   border-bottom: 1px solid rgb(194, 194, 194);
 }
 
 .nav-item-active,
-.nav-item:hover{
+.nav-item:hover, .user-menu-option:hover  {
   background-color: rgb(126, 126, 126);
 }
 
-#nav-menu-backdrop{
+#nav-menu-backdrop {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.75);
@@ -89,29 +89,47 @@ a{
   border-bottom: 2px #fff solid;
 }
 
+/* ============== userMenu dropdown =============*/
+.userMenu {
+  height: 150px;
+  width: 250px;
+  border: 1px solid rgb(177, 27, 27);
+  box-shadow: 1px 1px 5px rgb(177, 27, 27);
+  position: absolute;
+  top: 102px;
+  right: 28px;
+}
+
+.user-menu-option {
+  border: 1px solid rgb(228, 228, 228);
+  box-shadow: 1px 1px 5px grey;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
 /* ====== selected-content styles ============ */
 
-#in-app-router-outlet{
+#in-app-router-outlet {
   height: calc(100% - 75px) !important;
   background-color: rgb(228, 228, 228);
 }
 
-.router-content{
+.router-content {
   padding: 25px;
   height: 100%;
   width: 100%;
 }
 
-.center-card{
+.center-card {
   height: 100%;
   width: 100%;
   border-radius: 20px;
   background-color: #fff;
 }
 
-
 @media only screen and (min-width: 922px) {
-  .v-lg-visable{
+  .v-lg-visable {
     visibility: visible !important;
   }
 }
