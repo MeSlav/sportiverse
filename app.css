@@ -8,14 +8,21 @@ body {
   height: 100%;
 }
 
+*:focus{
+  outline: none !important;
+}
+
 p {
   margin: 0px !important;
 }
 
 a {
   text-decoration: none !important;
-
   color: #fff !important;
+}
+
+label{
+  color: #fff;
 }
 
 .h-75px {
@@ -56,6 +63,18 @@ LEFT BACKGROUND PART ========================
 }
 .v-hidden {
   visibility: hidden;
+}
+
+/*
+RIGHT FORM PART =============================
+*/
+
+.login-form input{
+  background-color: transparent !important;
+  border: 0px solid #000;
+  border-bottom: 1px solid rgb(255, 100, 100);
+  color: #fff;
+  padding: .35rem .75rem;
 }
 
 /*
