@@ -47,3 +47,13 @@ function onLogin(){
   checkRole();
   login();
 }
+
+function checkLoginStatusOnAppInit(){
+  checkRole();
+
+  if(localStorage.getItem("fitnessTrackerSession")){
+    login();
+  }
+}
+
+checkLoginStatusOnAppInit();
