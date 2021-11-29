@@ -8,7 +8,7 @@ body {
   height: 100%;
 }
 
-*:focus{
+*:focus {
   outline: none !important;
 }
 
@@ -21,17 +21,16 @@ a {
   color: #fff !important;
 }
 
-
-.container-fluid{
+.container-fluid {
   margin: 0 !important;
 }
 
-.card{
+.card {
   border-radius: 15px !important;
   box-shadow: 1px 1px 10px rgb(172, 172, 172);
 }
 
-label{
+label {
   color: #fff;
 }
 
@@ -47,7 +46,7 @@ label{
   cursor: pointer;
 }
 
-.bg-black{
+.bg-black {
   background-color: black;
 }
 /*
@@ -60,14 +59,14 @@ label{
 LEFT BACKGROUND PART ========================
 */
 
-.login-background{
+.login-background {
   background-image: url("./pics/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 
-.background-overlay{
+.background-overlay {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .v-hidden {
@@ -78,12 +77,12 @@ LEFT BACKGROUND PART ========================
 RIGHT FORM PART =============================
 */
 
-.login-form input{
+.login-form input {
   background-color: transparent !important;
   border: 0px solid #000;
   border-bottom: 1px solid rgb(255, 100, 100);
   color: #fff;
-  padding: .35rem .75rem;
+  padding: 0.35rem 0.75rem;
 }
 
 /*
@@ -105,7 +104,8 @@ RIGHT FORM PART =============================
 }
 
 .nav-item-active,
-.nav-item:hover, .user-menu-option:hover  {
+.nav-item:hover,
+.user-menu-option:hover {
   background-color: rgb(126, 126, 126);
 }
 
@@ -192,24 +192,42 @@ RIGHT FORM PART =============================
 
 /*-------------Content-------------*/
 /*=====Home=====*/
-.background-white{
+.background-white {
   background-color: #fff;
 }
 
-.profile-inf-pic{
+.profile-info-top {
+  height: 30%;
+}
+
+.profile-img {
   height: 100%;
   width: 100%;
 }
 
-.profile-pic-container{
+.profile-img-container {
   width: 110px;
-  height: 110px; 
+  height: 110px;
 }
 
-.info-background{
-  background-color: rgb(194, 194, 194);
-  border-radius: 15px;
-  font-weight: 600;
+.name-surname {
+  font-size: 36px;
+}
+
+.profile-info-bottom {
+  height: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.info-specification {
+  font-size: 18px;
+}
+
+.info-value {
+  font-size: 20px;
+  border-bottom: 2px solid rgb(248, 185, 185);
 }
 
 @media only screen and (min-width: 922px) {

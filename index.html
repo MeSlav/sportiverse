@@ -50,14 +50,13 @@
       </nav>
 
       <!-- RIGHT SIDE CONTENT -->
-      <div class="content col-12 col-lg-10 p-0" id="content">
+      <div class="content col-12 col-lg-10 h-100 p-0" id="content">
         <!-- header -->
         <div class="header d-flex justify-content-between align-items-center p-0 px-3 m-0 w-100 h-75px">
           <div class="m-0">
             <button class="btn btn-info d-lg-none bg-white border-white" onclick="onToggleMenu()">
               <i class="fas fa-align-left text-dark font-weight-bold" style="font-style: normal;">&#9776;</i>
             </button> 
-            <span>Ime Prezime</span>
           </div>
           <div class="profile-pic">
             <img src="pics/Account.png" class="h-100 w-100 rounded-circle cursor-pointer"alt="aaa"/>
@@ -74,51 +73,53 @@
           <!-- HOME -->
           <div class="router-content" id="home-content">
             <div class="home-container container-fluid row h-100 p-0">
+              <!--Profile info-->
               <div class="col-4 pr-3 h-100 d-flex">      
-                <div class="card background-white h-100 w-100 p-4">
-                  <div class="profile-pic-container d-flex align-self-center">
-                  <img class="rounded-circle  profile-inf-pic" src="pics/profile1.jpg" alt="">
+                <div class="card background-white h-100 w-100 p-3">
+                  <!--Top of profile info-->
+                  <div class="profile-info-top d-flex flex-column align-items-center justify-content-center p-3 w-100">
+                    <!--Profile picture-->
+                    <div class="profile-img-container ">
+                      <img src="pics/profile1.jpg" class="profile-img rounded-circle " alt="profile picture">
+                    </div>
+                    <div class="name-surname font-weight-bold pt-2">
+                      <p>Tin Minarik</p>
+                    </div>
                   </div>
-                  <div class="container-fluid d-flex flex-column mt-4 ">
-                    <div class="info-background p-3 mt-3">
-                      <span>Name:</span>
-                      <span>  Tin Minarik</span>
-                      </div>
-                    <div class="info-background p-3 mt-3">
-                      <span>From:</span>
-                      <span>  Mostar, Bosnia & Hercegovina</span>
+                  <!--Bottom of profile info-->
+                  <div class="profile-info-bottom d-flex flex-column w-100">
+                    <div class="info-container d-flex flex-column p-3">
+                      <div class="info-specification pl-1">Gender:</div>
+                      <div class="info-value pt-2 pl-2">Male</div>
                     </div>
-                    <div class="info-background p-3 mt-3"
-                      ><span>Date of Birth:</span>
-                      <span>  July, 30, 2000</span>
+                    <div class="info-container d-flex flex-column p-3">
+                      <div class="info-specification pl-1">Email:</div>
+                      <div class="info-value pt-2 pl-2">tin.minarik@fsre.sum.ba</div>
                     </div>
-                    <div class="info-background p-3 mt-3">
-                      <span>Age:</span>
-                      <span>21</span>
+                    <div class="info-container d-flex flex-column p-3">
+                      <div class="info-specification pl-1">Mobile:</div>
+                      <div class="info-value pt-2 pl-2">063-939-998</div>
                     </div>
-                    <div class="info-background p-3 mt-3">
-                      <span>Adress:</span>
-                      <span>  Kraljie Katarine 14</span>
+                    <div class="info-container d-flex flex-column p-3">
+                      <div class="info-specification pl-1">Birth date:</div>
+                      <div class="info-value pt-2 pl-2">30.7.2000</div>
                     </div>
-                    <div class="info-background p-3 mt-3">
-                      <span>Joined:</span>
-                      <span>  November, 29, 2021</span>
+                    <div class="info-container d-flex flex-column p-3">
+                      <div class="info-specification pl-1">Gender:</div>
+                      <div class="info-value pt-2 pl-2">Male</div>
                     </div>
-                    <div class="info-background p-3 mt-3">
-                      <span>Membership:</span>
-                      <span>  December, 29, 2021</span>
+                    <div class="info-container d-flex flex-column p-3">
+                      <div class="info-specification pl-1">Gender:</div>
+                      <div class="info-value pt-2 pl-2">Male</div>
                     </div>
-                    <div class="info-background p-3 mt-3">
-                      <span>Collage:</span>
-                      <span>Racunarstvo, FSRE</span>
-                    </div>
-                    <div class="info-background p-3 mt-3">
-                      <span></span>
-                      <span></span>
+                    <div class="info-container d-flex flex-column p-3">
+                      <div class="info-specification pl-1">Gender:</div>
+                      <div class="info-value pt-2 pl-2">Male</div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!--News-->
               <div class="col-8 pl-3 h-100" id="news">
                 <div class="card background-white h-100 w-100"></div>
               </div>
