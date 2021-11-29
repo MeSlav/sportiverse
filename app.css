@@ -21,6 +21,16 @@ a {
   color: #fff !important;
 }
 
+
+.container-fluid{
+  margin: 0 !important;
+}
+
+.card{
+  border-radius: 15px !important;
+  box-shadow: 1px 1px 10px rgb(172, 172, 172);
+
+
 label{
   color: #fff;
 }
@@ -40,7 +50,6 @@ label{
 .bg-black{
   background-color: black;
 }
-
 /*
 ***************************************************
 **************** LOGIN PART **********************
@@ -179,6 +188,28 @@ RIGHT FORM PART =============================
   width: 100%;
   border-radius: 20px;
   background-color: #fff;
+}
+
+/*-------------Content-------------*/
+/*=====Home=====*/
+.background-white{
+  background-color: #fff;
+}
+
+.profile-inf-pic{
+  height: 100%;
+  width: 100%;
+}
+
+.profile-pic-container{
+  width: 110px;
+  height: 110px; 
+}
+
+.info-background{
+  background-color: rgb(194, 194, 194);
+  border-radius: 15px;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 922px) {
