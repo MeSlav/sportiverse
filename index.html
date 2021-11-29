@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- LOGIN PART -->
-    <div class="container-fluid row p-0 m-0 h-100 bg-black d-none">
+    <div class="container-fluid row p-0 m-0 h-100 bg-black" id="login">
       <div class="col-7 p-0">
         <div class="background-overlay h-100 w-100 position-absolute"></div>
         <div class="login-background h-100 w-100"></div>
@@ -24,21 +24,21 @@
         <div class="login-form">
           <form>
             <div class="form-group">
-              <label for="inputUsername">Username a</label>
-              <input type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+              <label for="inputUsername">Username</label>
+              <input type="text" class="w-100" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
             </div>
             <div class="form-group">
               <label for="inputPassword">Password</label>
-              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              <input type="password" class="w-100" id="inputPassword" placeholder="Password">
             </div>
           </form>
-          <button class="btn btn-primary">Login</button>
+          <button class="btn btn-primary w-100 mt-5" onclick="onLogin()">Login</button>
         </div>
       </div>
     </div>
 
     <!-- APPLICATION -->
-    <div class="container-fluid row p-0 m-0 h-100">
+    <div class="container-fluid row p-0 m-0 h-100 d-none" id="app">
       <!-- LEFT NAV CONTENT -->
       <nav class="nav h-100 col-2 d-none d-lg-flex flex-column p-0 text-white" id="navigation">
         <div id="logo" class="logo d-flex justify-content-center align-items-center w-100 h-75px m-0 cursor-pointer"><span>&#9776;</span> <span class="px-2">Logo</span></div>
@@ -63,8 +63,8 @@
             <img src="pics/Account.png" class="h-100 w-100 rounded-circle cursor-pointer"alt="aaa"/>
             <!--User menu dropdown-->
             <div class="userMenu d-none justify-content-center align-items-center flex-column nav text-white">
-              <div class="logout user-menu-option cursor-pointer">Settings</div>
-              <div class="settings user-menu-option cursor-pointer">Logout</div>
+              <div class="logout user-menu-option cursor-pointer" id="settings">Settings</div>
+              <div class="settings user-menu-option cursor-pointer" id="logout">Logout</div>
             </div>
           </div>
         </div>
@@ -173,8 +173,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="./scripts/home.js"></script>
-    <script src="./scripts/training.js"></script>
+    <script src="./scripts/auth.js"></script>
+    <script src="./scripts/side-menu.js"></script>
+    <script src="./scripts/user-menu.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
