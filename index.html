@@ -73,9 +73,13 @@
           <!-- HOME -->
           <div class="router-content" id="home-content">
             <div class="home-container container-fluid row h-100 p-0">
+              <div class="responsive-toggle w-100 text-center d-flex d-xl-none mx-3 cursor-pointer" id="toggle-buttons">
+                <div class="w-50 btn-active background-white border-radius-top py-1" id="user-info-btn">User info</div>
+                <div class="w-50 background-white border-radius-top py-1" id="news-btn">News</div>
+              </div>
               <!--Profile info-->
-              <div class="col-4 pr-3 h-100 d-flex">      
-                <div class="card background-white h-100 w-100 p-3">
+              <div class="col-12 col-xl-4 d-xl-block pr-3 h-100" id="user-info">
+                <div class="card d-flex background-white h-100 w-100 p-3">
                   <!--Top of profile info-->
                   <div class="profile-info-top d-flex flex-column align-items-center justify-content-center p-3 w-100">
                     <!--Profile picture-->
@@ -120,7 +124,7 @@
                 </div>
               </div>
               <!--News-->
-              <div class="col-8 pl-3 h-100" id="news">
+              <div class="col-12 col-xl-8 d-none d-xl-block pl-3 h-100" id="news">
                 <div class="card background-white h-100 w-100 d-flex flex-column p-3">
                   <div class="title">
                     <p>News</p>
@@ -184,7 +188,7 @@
     <script src="./scripts/auth.js"></script>
     <script src="./scripts/side-menu.js"></script>
     <script src="./scripts/user-menu.js"></script>
-    <script src="./scripts/news.js"></script>
     <script src="./main.js"></script>
+    <script src="./scripts/home.js"></script>
   </body>
 </html>

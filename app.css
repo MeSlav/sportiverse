@@ -55,6 +55,11 @@ label {
   font-weight: bold;
 }
 
+.btn-active{
+  background-color: rgb(224, 72, 72) !important;
+  color: white !important;
+}
+
 /*
 ***************************************************
 **************** LOGIN PART **********************
@@ -234,6 +239,13 @@ RIGHT FORM PART =============================
 .info-value {
   font-size: 20px;
   border-bottom: 2px solid rgb(248, 185, 185);
+}
+
+.border-radius-top{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 @media only screen and (min-width: 922px) {
