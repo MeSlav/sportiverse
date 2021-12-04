@@ -20,11 +20,25 @@ const routes = {
   "/help": document.getElementById("help-content"),
 };
 
+function reAttachHomeEventListners(){
+  console.log("k.jwebgkčjb");
+  newsCard = document.getElementById("news");
+  userInfoCard = document.getElementById("user-info");
+  newsBtn = document.getElementById("news-btn");
+  userInfoBtn = document.getElementById("user-info-btn");
+  newsBtn.addEventListener("click", ()=>showNews());
+  userInfoBtn.addEventListener('click', ()=>showUserInfo());
+}
+
 const onNavigate = (pathname) => {
   routes[activeRoute].classList.add("d-none");
   routes[pathname].classList.remove("d-none");
   rootDiv.innerHTML = routes[pathname].outerHTML;
   activeRoute = pathname;
+
+  if(pathname == '/home' || pathname == '/logo'){
+    reAttachHomeEventListners();
+  }
 };
 
 onNavigate(activeRoute);

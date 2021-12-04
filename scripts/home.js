@@ -2,10 +2,10 @@
 ************ RESPONSIVE CARDS TOGGLE ***************
 */
 
-const newsCard = document.getElementById("news");
-const userInfoCard = document.getElementById("user-info");
-const newsBtn = document.getElementById("news-btn");
-const userInfoBtn = document.getElementById("user-info-btn");
+let newsCard = document.getElementById("news");
+let userInfoCard = document.getElementById("user-info");
+let newsBtn = document.getElementById("news-btn");
+let userInfoBtn = document.getElementById("user-info-btn");
 
 function showNews(){
   if(newsCard.classList.contains("d-none") && !userInfoCard.classList.contains("d-none")){
@@ -25,13 +25,7 @@ function showUserInfo(){
   }
 }
 
-newsBtn.addEventListener("click", ()=>showNews());
-
-userInfoBtn.addEventListener('click', ()=>showUserInfo());
-
-console.log(newsBtn, userInfoBtn);
-
-
+//DISCLAMER: EVENT LISTNERS FOR USERINFO/NEWS ARE IN main.js
 
 /*
 ************ NEWS ***************
