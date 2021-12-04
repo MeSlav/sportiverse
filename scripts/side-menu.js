@@ -13,7 +13,7 @@ let width =
   document.body.clientWidth;
 
 const onToggleMenu = () => {
-  if (width <= 992) {
+  if (width <= 1200) {
     menu.classList.toggle("d-none");
     menu.classList.toggle("position-absolute");
     menuBackdrop.classList.toggle("d-none");
@@ -25,7 +25,7 @@ menuBackdrop.addEventListener("click", () => {
 });
 
 const configureNavMenuBasedOnWidth = () => {
-  if (width >= 992) {
+  if (width >= 1200) {
     if (menu.classList.contains("position-absolute")) {
       menu.classList.toggle("position-absolute");
       menu.classList.toggle("d-none");
