@@ -21,6 +21,10 @@ a {
   color: #fff !important;
 }
 
+label {
+  color: #fff;
+}
+
 .container-fluid {
   margin: 0 !important;
 }
@@ -28,10 +32,6 @@ a {
 .card {
   border-radius: 15px !important;
   box-shadow: 1px 1px 10px rgb(172, 172, 172);
-}
-
-label {
-  color: #fff;
 }
 
 .h-75px {
@@ -49,6 +49,12 @@ label {
 .bg-black {
   background-color: black;
 }
+
+.title{
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
 /*
 ***************************************************
 **************** LOGIN PART **********************
