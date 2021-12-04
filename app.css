@@ -8,6 +8,27 @@ body {
   height: 100%;
 }
 
+*::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* App scrollbar design*/
+/* 4px scroll thumb. 10px margin from right margin */
+*:-webkit-scrollbar-track {
+  box-shadow: inset 0 0 14px 14px transparent;
+  border: solid 4px transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 14px 14px #bbbbbe;
+  border: solid 4px transparent;
+  border-radius: 14px;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
 *:focus {
   outline: none !important;
 }
@@ -161,6 +182,10 @@ RIGHT FORM PART =============================
   border-bottom: 2px #fff solid;
 }
 
+.h-95{
+  height: 95%;
+}
+
 /* ============== userMenu dropdown =============*/
 .userMenu {
   height: 150px;
@@ -248,8 +273,8 @@ RIGHT FORM PART =============================
   border-left: 1px solid #ccc;
 }
 
-@media only screen and (min-width: 922px) {
-  .v-lg-visable {
-    visibility: visible !important;
+@media only screen and (min-width: 1200px) {
+  .h-xl-100{
+    height: 100%;
   }
 }
