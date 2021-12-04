@@ -21,7 +21,6 @@ const routes = {
 };
 
 function reAttachHomeEventListners(){
-  console.log("k.jwebgkčjb");
   newsCard = document.getElementById("news");
   userInfoCard = document.getElementById("user-info");
   newsBtn = document.getElementById("news-btn");
