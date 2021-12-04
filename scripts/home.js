@@ -1,3 +1,41 @@
+/*
+************ RESPONSIVE CARDS TOGGLE ***************
+*/
+
+const newsCard = document.getElementById("news");
+const userInfoCard = document.getElementById("user-info");
+const newsBtn = document.getElementById("news-btn");
+const userInfoBtn = document.getElementById("user-info-btn");
+
+function showNews(){
+  if(newsCard.classList.contains("d-none") && !userInfoCard.classList.contains("d-none")){
+    newsCard.classList.toggle("d-none");
+    userInfoCard.classList.toggle("d-none");
+    newsBtn.classList.toggle("btn-active");
+    userInfoBtn.classList.toggle("btn-active");
+  }
+}
+
+function showUserInfo(){
+  if(!newsCard.classList.contains("d-none") && userInfoCard.classList.contains("d-none")){
+    newsCard.classList.toggle("d-none");
+    userInfoCard.classList.toggle("d-none");
+    newsBtn.classList.toggle("btn-active");
+    userInfoBtn.classList.toggle("btn-active");
+  }
+}
+
+newsBtn.addEventListener("click", ()=>showNews());
+
+userInfoBtn.addEventListener('click', ()=>showUserInfo());
+
+console.log(newsBtn, userInfoBtn);
+
+
+
+/*
+************ NEWS ***************
+*/
 let newsCOntainer = document.getElementById("news-content");
 
 const news = [
