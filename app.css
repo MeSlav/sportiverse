@@ -39,7 +39,6 @@ p {
 
 a {
   text-decoration: none !important;
-  color: #fff !important;
 }
 
 label {
@@ -59,6 +58,14 @@ label {
   height: 75px;
 }
 
+.h-15{
+  height: 15%;
+}
+
+.h-85{
+  height: 85%;
+}
+
 .text-white {
   color: #fff;
 }
@@ -74,6 +81,17 @@ label {
 .title{
   font-size: 2.25rem;
   font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.description-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(75, 75, 75);
 }
 
 .btn-active{
@@ -271,6 +289,19 @@ RIGHT FORM PART =============================
   border-top-right-radius: 20px;
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
+}
+
+/*---------------ABOUT US----------------*/
+
+.aboutus-img{
+  height: 100px;
+  width: 100px;
+}
+
+.desc-img-container img {
+  height: 90px;
+  width: 90px;
+  margin: 0px 5px;
 }
 
 @media only screen and (min-width: 1200px) {
