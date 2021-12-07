@@ -308,4 +308,12 @@ RIGHT FORM PART =============================
   .h-xl-100{
     height: 100%;
   }
+
+  .h-xl-15{
+    height: 15% !important;
+  }
+
+  .w-xl-75{
+    width: 75% !important;
+  }
 }
