@@ -149,10 +149,14 @@
               <p>NUTRITION</p>
             </div>
           </div>
-          <!-- CONTACT -->
+          <!-- ABOUT US -->
           <div class="router-content d-none" id="contact-content">
             <div class="container-fluid p-0 m-0 row h-100">
-              <div class="col-6 h-100">
+              <div class="responsive-toggle w-100 text-center d-flex d-xl-none mx-3 cursor-pointer" id="toggle-buttons">
+                <div class="w-50 btn-active background-white border-radius-top py-1" id="user1-btn">Mislav</div>
+                <div class="w-50 background-white border-radius-top py-1" id="user2-btn">Tin</div>
+              </div>
+              <div class="col-12 col-xl-6 d-xl-block h-95 h-xl-100" id="user1">
                 <div class="card h-100">
                   <div class="h-15 d-flex align-items-center justify-content-around ">
                     <div class="aboutus-img rounded-circle">
@@ -167,7 +171,7 @@
                     Inspiracija za aplikaciju je dosla zastarjelih sustava za evidenciju koje koristi teretana u koju ja i kolega idemo. <br>
                     Pocetna ideja za aplikaciju je bila da se koristi kao evidencija clanova, ali smo shvatili da je to prejednostavno za jednu aplikaciju te smo odlucili uvesti treninge i plan prehrane, a u buducnosti i jos mnogo novih pogodonosti.</p>
                     <p class="subtitle">Tehnologije:</p>
-                    <div class="desc-img-container d-flex justify-content-around">
+                    <div class="desc-img-container d-flex flex-wrap justify-content-around">
                       <div><img src="pics/html.png" alt=""></div>
                       <div><img src="pics/css.png" alt=""></div>
                       <div><img src="pics/bootstrap.png" alt=""></div>
@@ -175,11 +179,11 @@
                       <div><img src="pics/typescirpt.png" alt=""></div>
                       <div><img src="pics/dotnet.png" alt=""></div>
                     </div>
-                    <a href="https://docs.google.com/document/d/1_pX2HlVjjNqkBafzbx5lr9DiNFLTCDZEc6PxGhvApcg/edit" class="subtitle">Link vizije</a>
+                    <a href="https://docs.google.com/document/d/1_pX2HlVjjNqkBafzbx5lr9DiNFLTCDZEc6PxGhvApcg/edit" target="blank" class="subtitle">Link vizije</a>
                   </div>
                 </div>
               </div> 
-              <div class="col-6 h-100">
+              <div class="col-12 col-xl-6 h-95 h-xl-100 d-none d-xl-block" id="user2">
                 <div class="card h-100 ">
                   <div class="h-15 d-flex align-items-center justify-content-around">
                     <div class="aboutus-img rounded-circle">
@@ -194,7 +198,7 @@
                     Inspiracija za aplikaciju je dosla zastarjelih sustava za evidenciju koje koristi teretana u koju ja i kolega idemo. <br>
                     Pocetna ideja za aplikaciju je bila da se koristi kao evidencija clanova, ali smo shvatili da je to prejednostavno za jednu aplikaciju te smo odlucili uvesti treninge i plan prehrane, a u buducnosti i jos mnogo novih pogodonosti.</p>
                     <p class="subtitle">Tehnologije:</p>
-                    <div class="desc-img-container d-flex justify-content-around">
+                    <div class="desc-img-container d-flex justify-content-around flex-wrap">
                       <div><img src="pics/html.png" alt=""></div>
                       <div><img src="pics/css.png" alt=""></div>
                       <div><img src="pics/bootstrap.png" alt=""></div>
@@ -202,7 +206,7 @@
                       <div><img src="pics/typescirpt.png" alt=""></div>
                       <div><img src="pics/dotnet.png" alt=""></div>
                     </div>
-                    <a href="https://docs.google.com/document/d/1_pX2HlVjjNqkBafzbx5lr9DiNFLTCDZEc6PxGhvApcg/edit" class="subtitle">Link vizije</a>
+                    <a href="https://docs.google.com/document/d/1_pX2HlVjjNqkBafzbx5lr9DiNFLTCDZEc6PxGhvApcg/edit" target="blank" class="subtitle">Link vizije</a>
                   </div>
                 </div>
               </div>
@@ -243,6 +247,7 @@
     <script src="./scripts/side-menu.js"></script>
     <script src="./scripts/user-menu.js"></script>
     <script src="./scripts/home.js"></script>
+    <script src="./scripts/about-us.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>

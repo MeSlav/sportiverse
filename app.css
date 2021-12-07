@@ -301,7 +301,7 @@ RIGHT FORM PART =============================
 .desc-img-container img {
   height: 90px;
   width: 90px;
-  margin: 0px 5px;
+  margin: 5px 5px;
 }
 
 @media only screen and (min-width: 1200px) {

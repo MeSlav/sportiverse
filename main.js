@@ -20,13 +20,25 @@ const routes = {
   "/help": document.getElementById("help-content"),
 };
 
-function reAttachHomeEventListners(){
-  newsCard = document.getElementById("news");
-  userInfoCard = document.getElementById("user-info");
-  newsBtn = document.getElementById("news-btn");
-  userInfoBtn = document.getElementById("user-info-btn");
-  newsBtn.addEventListener("click", ()=>showNews());
-  userInfoBtn.addEventListener('click', ()=>showUserInfo());
+function reAttachEventListners(pathname){
+  if(pathname == '/home' || pathname == '/logo'){
+    //home
+    newsCard = document.getElementById("news");
+    userInfoCard = document.getElementById("user-info");
+    newsBtn = document.getElementById("news-btn");
+    userInfoBtn = document.getElementById("user-info-btn");
+    newsBtn.addEventListener("click", ()=>showNews());
+    userInfoBtn.addEventListener('click', ()=>showUserInfo());
+  }else if(pathname == '/contact'){
+    //about us
+    user1Card = document.getElementById("user1");
+    user2Card = document.getElementById("user2");
+    user1Btn = document.getElementById("user1-btn");
+    user2Btn = document.getElementById("user2-btn");
+    user1Btn.addEventListener("click", ()=>showCard1());
+    user2Btn.addEventListener('click', ()=>showCard2());
+  }
+  
 }
 
 const onNavigate = (pathname) => {
@@ -34,10 +46,8 @@ const onNavigate = (pathname) => {
   routes[pathname].classList.remove("d-none");
   rootDiv.innerHTML = routes[pathname].outerHTML;
   activeRoute = pathname;
-
-  if(pathname == '/home' || pathname == '/logo'){
-    reAttachHomeEventListners();
-  }
+  
+  reAttachEventListners(pathname);
 };
 
 onNavigate(activeRoute);
