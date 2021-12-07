@@ -103,6 +103,20 @@ label {
   color: white !important;
 }
 
+.toaster{
+  height: 80px;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  background-color: #ffcc00 !important;
+  z-index: 999 !important;
+}
+
+.toaster .close-toaster{
+  background-color: #cfa600;
+  border-radius: 10px;
+}
+
 /*
 ***************************************************
 **************** LOGIN PART **********************
@@ -319,6 +333,16 @@ RIGHT FORM PART =============================
 
   .w-xl-75{
     width: 75% !important;
+  }
+
+  .w-xl-400px{
+    width: 400px !important;
+  }
+
+  .toaster{
+    top: 75px;
+    right: 35px;
+    border-radius: 15px;
   }
 
   .aboutus-img{
