@@ -16,18 +16,19 @@ passwordInputField.addEventListener("keyup", function(e){
 function checkRole(isToasterEnabled = true){
   if(username === 'admin' && password === 'admin'){
     console.log("admin");
-    localStorage.setItem("fitnessTrackerSession", {
+    localStorage.setItem("fitnessTrackerSession", JSON.stringify({
       role: "owner"
-    })
+    }))
   }else if(username === 'trainer' && password === 'trainer'){
-    localStorage.setItem("fitnessTrackerSession", {
+    localStorage.setItem("fitnessTrackerSession", JSON.stringify({
       role: "trainer"
-    })
+    }))
   }else if(username === 'user' && password === 'user'){
-    localStorage.setItem("fitnessTrackerSession", {
+    localStorage.setItem("fitnessTrackerSession", JSON.stringify({
       role: "user"
-    })
+    }))
   }else{
+    //if ToasterEnabled is true then show toaster
     if(isToasterEnabled) showToaster();
   }
 }
